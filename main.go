@@ -34,8 +34,8 @@ func main() {
 
 }
 
-func (p person) updateName(newFirstName string) {
-	p.firstName = newFirstName
+func (ptrToP *person) updateName(newFirstName string) {
+	(*ptrToP).firstName = newFirstName
 }
 
 func (p person) print() {
